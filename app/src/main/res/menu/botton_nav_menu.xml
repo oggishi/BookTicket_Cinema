@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_edit_movie"
+        android:icon="@drawable/ic_movie"
+        android:title="Trang Chủ" />
+    <item
+        android:id="@+id/navigation_rap_phim"
+        android:icon="@drawable/ic_edit"
+        android:title="Rạp Phim" />
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- Scrollable container -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- RecyclerView cho slider cuộn ngang -->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:contentDescription="Slider hình ảnh"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circle_Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:ci_drawable="@drawable/activepoint"
+                app:ci_drawable_unselected="@drawable/non_activepoint"
+                android:layout_gravity="center_horizontal" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="16dp"
+                android:background="@color/white">
+
+                <!-- Thanh nhập liệu tìm kiếm -->
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Tìm kiếm tên phim"
+                    android:padding="8dp"
+                    android:background="@drawable/edittext_border"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp" />
+
+                <!-- Nút tìm kiếm -->
+                <ImageView
+                    android:id="@+id/searchButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_find_in_page_24"
+                    android:contentDescription="Tìm kiếm"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="?attr/selectableItemBackground" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- RecyclerView cho danh sách phim -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/verticalRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:paddingStart="32dp"
+        android:layout_marginBottom="80dp"
+        tools:listitem="@layout/item_movie" />
+
+
+</LinearLayout>

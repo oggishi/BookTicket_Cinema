@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cinema Ticket Booking</string>
+    <string name="tab_icon">Tab Icon Description</string> <!-- Thêm dòng này -->
+    <string-array name="genre_options">
+        <item>Hành động</item>
+        <item>Phiêu lưu</item>
+        <item>Hài hước</item>
+        <item>Chính kịch</item>
+        <item>Kinh dị</item>
+        <item>Khoa học viễn tưởng</item>
+        <item>Hoạt hình</item>
+        <item>Tài liệu</item>
+    </string-array>
+</resources>

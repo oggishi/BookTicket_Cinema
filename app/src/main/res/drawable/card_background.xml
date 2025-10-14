@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Đặt màu nền cho card -->
+    <solid android:color="#FFFFFF" /> <!-- Thay đổi màu nếu cần -->
+
+    <!-- Bo tròn các góc -->
+    <corners android:radius="12dp" />
+
+    <!-- Tạo viền cho card -->
+    <stroke
+        android:width="1dp"
+        android:color="#DDDDDD" /> <!-- Màu viền, thay đổi nếu cần -->
+
+    <!-- Padding bên trong card -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>

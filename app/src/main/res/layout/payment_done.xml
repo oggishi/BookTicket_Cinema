@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:padding="8dp">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="GIAO DỊCH HOÀN TẤT"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Payment Done Message -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="16dp"
+                    android:background="@drawable/card_background"
+                    >
+                    <TextView
+                        android:id="@+id/txtPaymentSuccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh toán thành công!"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#00C851"
+                        android:layout_marginVertical="8dp"
+                        android:paddingHorizontal="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"
+                        />
+
+
+
+                <!-- Tên phim -->
+                <TextView
+                    android:id="@+id/movieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <!-- SubType và Age Limit -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/subType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2D PHỤ ĐỀ"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/age_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="#FF6633"
+                        android:paddingHorizontal="3dp"
+                        android:paddingVertical="1dp"
+                        android:text="C17"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RẠP 1"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        android:id="@+id/theater"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Ghế - "
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        android:id="@+id/numberTicket"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="128dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="J3 J4"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        android:textColor="@color/orange"
+                        android:textStyle="bold"
+                        android:id="@+id/seatsValue"
+                        />
+
+
+                </LinearLayout>
+                <!-- Thông tin về rạp -->
+
+
+
+                <!-- Thời gian chiếu -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thời gian: "
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19:00 - "
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- Ngày chiếu -->
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31/10/2024"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:paddingVertical="8dp"
+                        android:textStyle="bold"
+
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phương thức thanh toán"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZaloPay"
+                        android:textSize="14sp"
+                        android:paddingStart="8dp"
+                        android:id="@+id/payMethod"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày đặt: "
+                            android:textSize="14sp"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:id="@+id/dateBook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08/11/2024"
+                            android:textSize="14sp"
+                            android:layout_marginTop="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng tiền: "
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/amount_done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="160,000₫"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/orange"
+                            android:layout_marginTop="16dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:background="#DCD9D9" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="32dp"
+                    >
+
+
+
+                <!-- Button to Finish or Go Back to Home -->
+                <Button
+                    android:id="@+id/btnFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoàn tất"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="32dp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
