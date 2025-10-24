@@ -1,6 +1,6 @@
 # BookTicket_Cinema
 
-Professional cinema ticket booking system — a production-ready Java application for managing movies, showtimes, seat maps, bookings, payments, and reporting. This single README contains both a high-level professional overview and the detailed Functions & Tasks backlog to guide development and contribution.
+Cinema ticket booking system — a production-ready Java application for managing movies, showtimes, seat maps, bookings, payments, and reporting. This single README contains both a high-level professional overview and the detailed Functions & Tasks backlog to guide development and contribution.
 
 [![Language](https://img.shields.io/badge/Language-Java-blue)]()
 [![Status](https://img.shields.io/badge/Status-Active-green)]()
@@ -8,7 +8,7 @@ Professional cinema ticket booking system — a production-ready Java applicatio
 
 ---
 
-## Professional overview
+## Overview
 
 BookTicket_Cinema centralizes cinema operations: movie scheduling, seat allocation, booking lifecycle, payments, ticket issuance, and reporting. It's engineered for high-concurrency booking environments with a focus on transactional safety, idempotency, and observability. The codebase is organized to separate domain logic from adapters (web, db, payments) for easy testing and replacement.
 
